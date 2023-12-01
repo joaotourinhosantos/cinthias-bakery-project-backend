@@ -16,10 +16,15 @@ class Imc extends Model
      */
     protected $fillable = [
         'name',
-        'weight',
-        'height',
-        'result'
-    ];
+        'last_name',
+        'bday',
+        'gender',
+        'address',
+        'number',
+        'city',
+        'cep',
+        'tel',
+        'email'    ];
 
     /**
      * The attributes that should be cast to native types.
@@ -27,7 +32,7 @@ class Imc extends Model
      * @var array
      */
     protected $casts = [
-        'weight' => 'int',
-        'height' => 'float',
+        // 'weight' => 'int',
+        // 'height' => 'float',
     ];
 }
